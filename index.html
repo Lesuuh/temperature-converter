@@ -19,7 +19,7 @@
                 <div class="inputTemperature">
                     <label for="inputDegree">Enter Temperture</label>
                     <div class="input-group">
-                        <input type="number" class="form-control" id="inputDegree" name="inputDegree" placeholder="Enter Degree" value="0" />
+                        <input type="number" class="form-control" id="inputDegree" name="inputDegree" placeholder="Enter Degree"  />
                         <div class="input-group-append">
                           <select class="form-control" id="selectInputDegreeType">
                             <option value="C" selected>&deg;C</option>
@@ -32,9 +32,9 @@
                 <div class="outputTemperature">
                     <label for="temperatureType">Convert to</label><br>
                     <select name="temperatureType" id="temperatureType">
-                        <option value="0">Fahrenheit</option>
                         <option value="0">Celsuis</option>
-                        <option value="0">Rankine</option>
+                        <option value="1">Fahrenheit</option>
+                        <option value="2">Kelvin</option>
                     </select>
                 </div>
                 <div class="button">
@@ -45,9 +45,9 @@
        </div>
        <div class="right resultSection">
             <div id="resultValueSection">
-                    <div id="convertedDegree">32</div>
+                    <div id="convertedDegree">0</div>
                     <p id="degree"><sup>&deg;</sup></p>
-                    <small id="convertedUnit"><sup>F</sup></small>
+                    <small id="convertedUnit"><sup>C</sup></small>
             </div>
        </div>
     </main>
