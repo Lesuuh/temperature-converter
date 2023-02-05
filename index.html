@@ -5,23 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap-grid.min.css" integrity="sha512-LLxZHu50SXdFJdAzHmDJAoLaozhTB4BYZPoN+xdTRjiPmPhI+1mEJXdoHHiDWmd/jj/9x10pkd8mYGG9sqfPPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="app.css">
     <!-- fonts -->
     <style> @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;200;300;400;500&display=swap'); </style>
 </head>
 <body>
     <main>
-        <div class="input">
-            <label for="celsuis">Celsius:</label>
-            <input type="number" name="" id="celsuis">
-        </div>
-        <div class="button">
-            <button class="btn">Convert</button>
-        </div>
-        <div class="display">
-            <span>Fahrenheit:<p id="fahrenheit"></p></span>
-        </div>
+       <div class="left inputSection">
+        <!-- <h4>Enter Temperture</h4> -->
+            <form action="#">
+                <div class="inputTemperature">
+                    <label for="inputDegree">Enter Temperture</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="inputDegree" name="inputDegree" placeholder="Enter Degree" value="0" />
+                        <div class="input-group-append">
+                          <select class="form-control" id="selectInputDegreeType">
+                            <option value="C" selected>&deg;C</option>
+                            <option value="F">&deg;F</option>
+                            <option value="K">K</option>
+                          </select>
+                        </div>
+                      </div>
+                </div>
+                <div class="outputTemperature">
+                    <label for="temperatureType">Convert to</label><br>
+                    <select name="temperatureType" id="temperatureType">
+                        <option value="0">Fahrenheit</option>
+                        <option value="0">Celsuis</option>
+                        <option value="0">Rankine</option>
+                    </select>
+                </div>
+                <div class="button">
+                    <button id="submit">Convert <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                
+            </form>
+       </div>
+       <div class="right resultSection">
+            <div id="resultValueSection">
+                    <div id="convertedDegree">32</div>
+                    <p id="degree"><sup>&deg;</sup></p>
+                    <small id="convertedUnit"><sup>F</sup></small>
+            </div>
+       </div>
     </main>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app.js"></script>
 </body>
 </html>
