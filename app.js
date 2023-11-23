@@ -14,7 +14,7 @@ function convertInputDegree(){
     const inputDegreeValue = document.getElementById("inputDegree").value
     const inputDegreeUnit = document.getElementById("selectInputDegreeType").value
     const temperatureType = document.getElementById("temperatureType").value
-    const convertedUnit = document.getElementById("convertedUnit");
+    const convertedUnit = document.getElementById("convertedUnit").toFixed(2);
 
     let resultValue = ""
 
