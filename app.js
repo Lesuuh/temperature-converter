@@ -14,7 +14,7 @@ function convertInputDegree(){
     const inputDegreeValue = document.getElementById("inputDegree").value
     const inputDegreeUnit = document.getElementById("selectInputDegreeType").value
     const temperatureType = document.getElementById("temperatureType").value
-    const convertedUnit = document.getElementById("convertedUnit").toFixed(2);
+    const convertedUnit = document.getElementById("convertedUnit");
 
     let resultValue = ""
 
@@ -39,7 +39,7 @@ function convertInputDegree(){
 
     // console.log(resultValue);
 
-    const convertedDegree = document.getElementById("convertedDegree").innerText = resultValue
+    const convertedDegree = document.getElementById("convertedDegree").innerText.toFixed(2) = resultValue
 
 }
 
